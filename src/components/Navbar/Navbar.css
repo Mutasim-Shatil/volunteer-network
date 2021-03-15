@@ -1,0 +1,22 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar__logo {
+    width: 8rem;
+}
+.navbar__logo img {
+    width: 100%;
+}
+.navbar__details {
+    display: flex;
+}
+/* .navbar__details p {
+    padding-right: 10px;
+} */
+.details {
+    padding-right: 10px;
+    text-decoration: none;
+}
