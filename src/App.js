@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route>
           <Home />
