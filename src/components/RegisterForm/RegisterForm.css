@@ -1,0 +1,19 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.register__input {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    
+}
+.register__input-btn {
+    color: white;
+    background-color: rgb(53, 133, 224);
+    cursor: pointer;
+    margin-top: 1.5rem;
+}

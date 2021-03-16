@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import { createContext, useState } from "react";
 import NoMatch from "./components/NoMatch";
+import RegisterForm from "./components/RegisterForm/RegisterForm";
 
 export const UserContext = createContext();
 
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <RegisterForm />
           </Route>
           <Route path="*">
             <NoMatch />
