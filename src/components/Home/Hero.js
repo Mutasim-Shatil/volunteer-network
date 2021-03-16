@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Category } from "../../data/Data";
+import './Hero.css'
 
 const Hero = () => {
   const allCategories = Category;
   console.log(allCategories);
   return (
-    <div>
+    <div className="hero">
       {allCategories.map((category) => {
         return (
-          <div>
-            <h1>{category.title}</h1>
-            <img src={category.image} alt="" />
+          <div className="category">
+            <Link to={category.id} className='set-link'>
+              <img src={category.image} alt={category.title} />
+              <h3>{category.title}</h3>
+            </Link>
           </div>
         );
       })}

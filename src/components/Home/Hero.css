@@ -1,0 +1,28 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -140px;
+}
+.category {
+    /* width: 250px; */
+    padding: 10%;
+    margin: 0 auto;
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+}
+.category img {
+    width: 100%;
+}
+.category h3 {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+.set-link {
+    text-decoration: none;
+}
