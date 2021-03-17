@@ -6,6 +6,7 @@ import Login from "./components/Login/Login";
 import { createContext, useState } from "react";
 import NoMatch from "./components/NoMatch";
 import RegisterForm from "./components/RegisterForm/RegisterForm";
+import AdminPanel from "./components/AdminPanel/AdminPanel";
 
 export const UserContext = createContext();
 
@@ -22,8 +23,11 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/register">
+          <Route path="/register/:id">
             <RegisterForm />
+          </Route>
+          <Route path="/adminPanel">
+            <AdminPanel />
           </Route>
           <Route path="*">
             <NoMatch />
